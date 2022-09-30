@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/edt_them"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Item thêm"
+                android:textSize="20dp" />
+            <EditText
+                android:id="@+id/edt_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mô tả thêm"
+                android:layout_below="@id/edt_them"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/bt_them"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_hint"
+                android:text="Thêm" />
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_them"
+            android:layout_marginTop="20dp" />
+    </RelativeLayout>
+</RelativeLayout>
